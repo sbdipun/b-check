@@ -6,3 +6,5 @@ BeautifulSoup
 requests
 Thread
 Flask
+pyTelegramBotAPI
+python-telegram-bot
