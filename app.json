@@ -1,17 +1,22 @@
 {
-  "name": "TB-check Bot",
-  "description": "Checks Everything",
+  "name": "TG File Sharing Bot",
+  "description": "file sharing bot store posts and it can access by special links",
   "keywords": [
     "telegram",
-    "Bcheck",
-    "bot"
+    "file",
+    "sharing"
   ],
   "repository": "https://github.com/sbdipun/b-check",
   "logo": "https://telegra.ph/file/14d3013fda21281c54b61.jpg",
   "env": {
-    "TG_BOT_TOKEN": {
+    "token": {
       "description": "Your Bot token, Get it from @Botfather",
       "value": ""
+    },
+    "id": {
+      "description": "An integer of consisting of your owner ID",
+      "value": "1250450587"
+  
   },
   "addons": [
     {
@@ -29,7 +34,7 @@
   "formation": {
     "worker": {
       "quantity": 1,
-      "size": "eco"
+      "size": "basic"
     }
   }
 }
