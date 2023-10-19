@@ -1,1 +1,35 @@
-
+{
+  "name": "TB-check Bot",
+  "description": "Checks Everything",
+  "keywords": [
+    "telegram",
+    "Bcheck",
+    "bot"
+  ],
+  "repository": "https://github.com/sbdipun/b-check",
+  "logo": "https://telegra.ph/file/14d3013fda21281c54b61.jpg",
+  "env": {
+    "TG_BOT_TOKEN": {
+      "description": "Your Bot token, Get it from @Botfather",
+      "value": ""
+  },
+  "addons": [
+    {
+    "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  }
+}
